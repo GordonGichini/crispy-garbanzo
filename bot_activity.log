@@ -1,0 +1,330 @@
+2026-03-19 23:14:14,108 | INFO | Connecting to 149.154.167.51:443/TcpFull...
+2026-03-19 23:14:16,301 | INFO | Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-19 23:14:17,659 | INFO | Phone migrated to 4
+2026-03-19 23:14:17,921 | INFO | Reconnecting to new data center 4
+2026-03-19 23:14:18,245 | INFO | Disconnecting from 149.154.167.51:443/TcpFull...
+2026-03-19 23:14:18,247 | INFO | Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-03-19 23:14:18,248 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-19 23:14:20,412 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-03-19 23:28:44,844 | INFO | System clock is wrong, set time offset to 1s
+2026-03-19 23:28:44,854 | INFO | System clock is wrong, set time offset to 1s
+2026-03-19 23:28:52,775 | INFO | ============================================================
+2026-03-19 23:28:52,776 | INFO |   TELEGRAM → MT5 SIGNAL BOT  |  Starting up...
+2026-03-19 23:28:52,777 | INFO | ============================================================
+2026-03-19 23:28:53,229 | INFO | ✅ MT5 Connected | Account: 435035534 | Balance: $99.08 | Server: Exness-MT5Trial9
+2026-03-19 23:28:53,230 | INFO | 👂 Listening to channel: https://t.me/+OVM9Z-_JoqI4ZDFk
+2026-03-19 23:28:53,230 | INFO | 📲 Notifications → https://t.me/+Mn6fwlAnbXU0MWU0
+2026-03-19 23:28:53,231 | INFO | ✅ Bot is live and waiting for signals...
+
+2026-03-19 23:31:52,709 | INFO | Got difference for channel 3781553587 updates
+2026-03-20 20:42:12,995 | WARNING | Server closed the connection: [WinError 121] The semaphore timeout period has expired
+2026-03-20 20:42:13,007 | INFO | Connection closed while receiving data: [WinError 121] The semaphore timeout period has expired
+2026-03-20 20:42:13,008 | INFO | Closing current connection to begin reconnect...
+2026-03-20 20:42:13,010 | INFO | <class 'OSError'> during disconnect: [WinError 121] The semaphore timeout period has expired
+2026-03-20 20:42:13,010 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:13,012 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:14,017 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:15,024 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:16,031 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:17,038 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:18,044 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:19,051 | INFO | Failed reconnection attempt 1 with ConnectionError
+2026-03-20 20:42:20,057 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:20,058 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:21,065 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:22,072 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:23,079 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:24,086 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:25,093 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:26,100 | INFO | Failed reconnection attempt 2 with ConnectionError
+2026-03-20 20:42:27,107 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:27,108 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:28,114 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:29,121 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:30,128 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:31,135 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:32,142 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:33,149 | INFO | Failed reconnection attempt 3 with ConnectionError
+2026-03-20 20:42:34,165 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:34,166 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:35,172 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:36,179 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:37,186 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:38,193 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:39,200 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:40,207 | INFO | Failed reconnection attempt 4 with ConnectionError
+2026-03-20 20:42:41,218 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:41,220 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:42,222 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:43,225 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:44,229 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:45,233 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:46,240 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-03-20 20:42:47,248 | INFO | Failed reconnection attempt 5 with ConnectionError
+2026-03-20 20:42:48,250 | ERROR | Automatic reconnection failed 5 time(s)
+2026-03-20 20:42:48,251 | INFO | Disconnecting from 149.154.167.91:443/TcpFull...
+2026-03-20 20:42:48,251 | ERROR | Future exception was never retrieved
+future: <Future finished exception=ConnectionError('Connection to Telegram failed 5 time(s)')>
+ConnectionError: Connection to Telegram failed 5 time(s)
+2026-03-20 20:42:48,255 | INFO | Disconnection from 149.154.167.91:443/TcpFull complete!
+2026-03-20 20:42:48,256 | INFO | Cannot get difference since the network is down: ConnectionError: Connection to Telegram failed 5 time(s)
+2026-03-20 20:42:48,256 | INFO | Not disconnecting (already have no connection)
+2026-03-20 20:42:48,274 | INFO | MT5 disconnected.
+2026-03-20 20:42:48,274 | INFO | Bot stopped. MT5 disconnected.
+2026-04-09 10:34:42,920 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 10:34:43,172 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-09 10:34:45,180 | INFO | ============================================================
+2026-04-09 10:34:45,180 | INFO |   TELEGRAM → MT5 SIGNAL BOT  |  Starting up...
+2026-04-09 10:34:45,223 | INFO | ============================================================
+2026-04-09 10:35:03,296 | INFO | ✅ MT5 Connected | Account: 435035534 | Balance: $408.84 | Server: Exness-MT5Trial9
+2026-04-09 10:35:03,297 | INFO | 👂 Listening to channel: https://t.me/+OVM9Z-_JoqI4ZDFk
+2026-04-09 10:35:03,298 | INFO | 📲 Notifications → https://t.me/+Mn6fwlAnbXU0MWU0
+2026-04-09 10:35:03,298 | INFO | ✅ Bot is live and waiting for signals...
+
+2026-04-09 10:49:45,493 | INFO | Got difference for channel 1584939836 updates
+2026-04-09 10:50:06,524 | INFO | Got difference for channel 3781553587 updates
+2026-04-09 11:04:45,519 | INFO | Got difference for account updates
+2026-04-09 12:07:02,040 | INFO | 📨 New message received:
+Good morning 🌹
+──────────────────────────────────────────────────
+2026-04-09 12:07:02,100 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 12:07:02,110 | INFO | 📨 New message received:
+Who is Ready For  Signal 
+Tap emojis ✔️
+──────────────────────────────────────────────────
+2026-04-09 12:07:02,113 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 12:19:46,900 | INFO | Got difference for account updates
+2026-04-09 12:20:07,148 | INFO | Got difference for channel 2111752212 updates
+2026-04-09 12:34:48,177 | INFO | Got difference for channel 2111752212 updates
+2026-04-09 12:44:29,014 | INFO | 📨 New message received:
+#XAUUSD -BUY 4726/4723📈
+🔔🔔🔔🔔
+
+🏅 TP 4729
+🏅 TP 4732
+🏅 TP 4735
+🏅 TP 4738
+🏅 TP 4741
+🏅 TP 4744
+
+
+⚠️SL 4715
+USE PROPER AND MONEY MANAGEMENT📊
+──────────────────────────────────────────────────
+2026-04-09 12:44:29,046 | INFO | ✅ Valid signal parsed: BUY XAUUSDm | Entry: 4723.0/4726.0 | TPs: [4729.0, 4732.0, 4735.0, 4738.0, 4741.0, 4744.0] | SL: 4715.0
+2026-04-09 12:44:29,048 | INFO | 📊 Signal Detected:
+  BUY XAUUSDm
+  Entry Range: 4723.0 – 4726.0
+  TP1: 4729.0
+  TP2: 4732.0
+  TP3: 4735.0
+  TP4: 4738.0
+  TP5: 4741.0
+  TP6: 4744.0
+  SL: 4715.0
+2026-04-09 12:44:29,735 | WARNING | ⚠️ Signal CANCELLED — Price out of range.
+  Signal Range: 4723.0 – 4726.0
+  Current Price: 0.0
+2026-04-09 12:50:08,907 | INFO | Got difference for channel 3781553587 updates
+2026-04-09 12:51:08,599 | INFO | 📨 New message received:
+#XAUUSD 
+TP1 Hit Successful 30+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 12:51:08,601 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 12:57:08,640 | INFO | Got difference for channel 1895198533 updates
+2026-04-09 13:02:13,595 | INFO | 📨 New message received:
+#XAUUSD 
+TP2 Hit Successful 60+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 13:02:13,595 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:18:08,832 | INFO | Got difference for channel 2111752212 updates
+2026-04-09 13:25:19,265 | INFO | 📨 New message received:
+#XAUUSD 
+TP3 Hit Successful 90+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 13:25:19,267 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:25:37,640 | INFO | 📨 New message received:
+#XAUUSD 
+TP4 Hit Successful 120+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 13:25:37,642 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:31:10,671 | INFO | 📨 New message received:
+boom boom
+──────────────────────────────────────────────────
+2026-04-09 13:31:10,672 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:31:35,584 | INFO | 📨 New message received:
+boom boom
+──────────────────────────────────────────────────
+2026-04-09 13:31:35,585 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:34:26,133 | INFO | 📨 New message received:
+#XAUUSD 
+TP5 Hit Successful 150+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 13:34:26,134 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 13:34:48,604 | INFO | Got difference for channel 1521782165 updates
+2026-04-09 13:34:49,170 | INFO | Got difference for channel 1584939836 updates
+2026-04-09 13:38:07,405 | INFO | Got difference for channel 1521782165 updates
+2026-04-09 13:45:21,550 | INFO | Got difference for channel 1521782165 updates
+2026-04-09 13:53:33,574 | INFO | 📨 New message received:
+#XAUUSD 
+TP6 Hit Successful 180+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 13:53:33,574 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 19:36:57,800 | WARNING | Server closed the connection: [WinError 121] The semaphore timeout period has expired
+2026-04-09 19:36:57,841 | INFO | Connection closed while receiving data: [WinError 121] The semaphore timeout period has expired
+2026-04-09 19:36:57,846 | INFO | Closing current connection to begin reconnect...
+2026-04-09 19:36:57,867 | INFO | <class 'OSError'> during disconnect: [WinError 121] The semaphore timeout period has expired
+2026-04-09 19:36:57,877 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:36:57,906 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:36:59,304 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:00,319 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:01,327 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:02,334 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:03,343 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:04,366 | INFO | Failed reconnection attempt 1 with ConnectionError
+2026-04-09 19:37:05,374 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:37:05,488 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:06,710 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:07,714 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:08,721 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:09,725 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:10,731 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:11,735 | INFO | Failed reconnection attempt 2 with ConnectionError
+2026-04-09 19:37:12,746 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:37:12,748 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:13,751 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:14,762 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:15,775 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:16,784 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:17,793 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:18,797 | INFO | Failed reconnection attempt 3 with ConnectionError
+2026-04-09 19:37:19,818 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:37:19,823 | WARNING | Attempt 1 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:20,831 | WARNING | Attempt 2 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:21,838 | WARNING | Attempt 3 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:22,855 | WARNING | Attempt 4 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:23,862 | WARNING | Attempt 5 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:24,869 | WARNING | Attempt 6 at connecting failed: OSError: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2026-04-09 19:37:25,877 | INFO | Failed reconnection attempt 4 with ConnectionError
+2026-04-09 19:37:26,882 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:37:27,323 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-09 19:37:28,232 | INFO | Got difference for account updates
+2026-04-09 19:37:29,024 | INFO | Got difference for account updates
+2026-04-09 19:37:29,498 | INFO | Got difference for channel 2355675171 updates
+2026-04-09 19:37:29,876 | INFO | Got difference for channel 1895198533 updates
+2026-04-09 19:37:30,246 | INFO | Got difference for channel 1904158438 updates
+2026-04-09 19:37:30,595 | INFO | Got difference for channel 3045620279 updates
+2026-04-09 19:37:30,917 | INFO | Got difference for channel 1588519179 updates
+2026-04-09 19:37:31,218 | INFO | Got difference for channel 1692967341 updates
+2026-04-09 19:37:31,620 | INFO | Got difference for channel 1306149681 updates
+2026-04-09 19:37:31,896 | INFO | Got difference for channel 2260379475 updates
+2026-04-09 19:37:32,180 | INFO | Got difference for channel 3781553587 updates
+2026-04-09 19:37:32,628 | INFO | Got difference for channel 2111752212 updates
+2026-04-09 19:37:33,605 | INFO | Got difference for channel 1521782165 updates
+2026-04-09 19:37:33,935 | INFO | Got difference for channel 2706528761 updates
+2026-04-09 19:37:33,937 | INFO | 📨 New message received:
+All Targets Done Successfully✔️
+──────────────────────────────────────────────────
+2026-04-09 19:37:33,942 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 19:37:33,943 | INFO | 📨 New message received:
+Who is Ready For New Setup
+Tap To Emojis Get_2nd Signal✔️
+──────────────────────────────────────────────────
+2026-04-09 19:37:33,944 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 19:37:33,946 | INFO | 📨 New message received:
+#XAUUSD -SELL 4740/4743📉
+🔔🔔🔔🔔
+
+🏅 TP 4737
+🏅 TP 4734
+🏅 TP 4731
+🏅 TP 4728
+🏅 TP 4725
+🏅 TP 4722
+
+
+⚠️SL 4750
+USE PROPER AND MONEY MANAGEMENT📊
+──────────────────────────────────────────────────
+2026-04-09 19:37:33,966 | INFO | ✅ Valid signal parsed: SELL XAUUSDm | Entry: 4740.0/4743.0 | TPs: [4737.0, 4734.0, 4731.0, 4728.0, 4725.0, 4722.0] | SL: 4750.0
+2026-04-09 19:37:33,968 | INFO | 📊 Signal Detected:
+  SELL XAUUSDm
+  Entry Range: 4740.0 – 4743.0
+  TP1: 4737.0
+  TP2: 4734.0
+  TP3: 4731.0
+  TP4: 4728.0
+  TP5: 4725.0
+  TP6: 4722.0
+  SL: 4750.0
+2026-04-09 19:37:34,020 | INFO | 📨 New message received:
+#XAUUSD 
+TP1 Hit Successful 30+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 19:37:34,021 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 19:37:34,021 | INFO | 📨 New message received:
+#XAUUSD 
+TP2 Hit Successful 60+ PIPS👍
+──────────────────────────────────────────────────
+2026-04-09 19:37:34,022 | INFO | ⏭️  Message skipped — not a valid signal.
+2026-04-09 19:37:34,330 | INFO | Got difference for channel 1584939836 updates
+2026-04-09 19:37:34,843 | INFO | Got difference for channel 1209348222 updates
+2026-04-09 19:37:34,879 | WARNING | ⚠️ Signal CANCELLED — Price out of range.
+  Signal Range: 4740.0 – 4743.0
+  Current Price: 4792.359
+2026-04-09 19:39:41,506 | INFO | Disconnecting from 149.154.167.91:443/TcpFull...
+2026-04-09 19:39:41,510 | INFO | Disconnection from 149.154.167.91:443/TcpFull complete!
+2026-04-09 19:39:41,543 | INFO | MT5 disconnected.
+2026-04-09 19:39:41,544 | INFO | Bot stopped. MT5 disconnected.
+2026-04-09 19:40:00,716 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:40:00,984 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-09 19:40:02,780 | INFO | ============================================================
+2026-04-09 19:40:02,780 | INFO |   TELEGRAM → MT5 SIGNAL BOT  |  Starting up...
+2026-04-09 19:40:02,789 | INFO | ============================================================
+2026-04-09 19:41:16,591 | ERROR | MT5 initialize failed: (-10005, 'IPC timeout')
+2026-04-09 19:41:16,593 | ERROR | ❌ Could not connect to MT5 — aborting.
+2026-04-09 19:41:42,254 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 19:41:42,531 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-09 19:41:44,362 | INFO | ============================================================
+2026-04-09 19:41:44,363 | INFO |   TELEGRAM → MT5 SIGNAL BOT  |  Starting up...
+2026-04-09 19:41:44,365 | INFO | ============================================================
+2026-04-09 19:41:44,409 | INFO | ✅ MT5 Connected | Account: 435035534 | Balance: $408.84 | Server: Exness-MT5Trial9
+2026-04-09 19:41:44,410 | INFO | 👂 Listening to channel: https://t.me/+OVM9Z-_JoqI4ZDFk
+2026-04-09 19:41:44,410 | INFO | 📲 Notifications → https://t.me/+Mn6fwlAnbXU0MWU0
+2026-04-09 19:41:44,411 | INFO | ✅ Bot is live and waiting for signals...
+
+2026-04-09 19:41:49,037 | INFO | Got difference for channel 3781553587 updates
+2026-04-09 20:11:44,987 | INFO | Got difference for account updates
+2026-04-09 21:04:30,042 | INFO | Closing current connection to begin reconnect...
+2026-04-09 21:04:30,050 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-09 21:04:30,329 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-09 21:06:32,053 | INFO | Got difference for channel 1209348222 updates
+2026-04-10 07:17:41,155 | WARNING | Server closed the connection: [WinError 64] The specified network name is no longer available
+2026-04-10 07:17:42,056 | INFO | Closing current connection to begin reconnect...
+2026-04-10 07:17:42,073 | INFO | Connection closed while receiving data: [WinError 64] The specified network name is no longer available
+2026-04-10 07:17:42,296 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-04-10 07:17:42,341 | INFO | <class 'ConnectionResetError'> during disconnect: [WinError 64] The specified network name is no longer available
+2026-04-10 07:17:42,622 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-04-10 07:17:44,819 | INFO | Got difference for account updates
+2026-04-10 07:17:45,597 | INFO | Got difference for channel 2260379475 updates
+2026-04-10 07:17:45,994 | INFO | Got difference for channel 3781553587 updates
+2026-04-10 07:17:47,072 | INFO | Got difference for channel 2111752212 updates
+2026-04-10 07:17:47,404 | INFO | Got difference for channel 1209348222 updates
+2026-04-10 07:20:11,857 | INFO | Got difference for channel 1209348222 updates
+2026-04-10 08:32:51,305 | INFO | Got difference for channel 3781553587 updates
+2026-04-10 10:17:52,549 | INFO | Got difference for channel 1929976821 updates
+2026-04-10 10:47:04,454 | INFO | Got difference for channel 1862351852 updates
+2026-04-10 10:47:52,163 | INFO | Got difference for channel 1862351852 updates
+2026-04-10 10:47:52,438 | INFO | Got difference for channel 1584939836 updates
+2026-04-10 10:55:10,923 | INFO | Got difference for channel 1481543451 updates
+2026-04-10 11:01:13,773 | INFO | Got difference for channel 1588519179 updates
+2026-04-10 11:02:52,280 | INFO | Got difference for channel 1904158438 updates
+2026-04-10 11:32:14,836 | INFO | Got difference for channel 1481543451 updates
+2026-04-10 11:32:52,944 | INFO | Got difference for channel 1481543451 updates
+2026-04-10 11:34:14,849 | INFO | Got difference for channel 1862351852 updates
+2026-04-10 11:47:55,127 | INFO | Got difference for channel 1929976821 updates
+2026-04-10 11:54:39,129 | INFO | Got difference for channel 1209348222 updates
+2026-04-10 12:05:35,405 | INFO | Disconnecting from 149.154.167.91:443/TcpFull...
+2026-04-10 12:05:35,410 | INFO | Disconnection from 149.154.167.91:443/TcpFull complete!
+2026-04-10 12:05:35,456 | INFO | MT5 disconnected.
+2026-04-10 12:05:35,460 | INFO | Bot stopped. MT5 disconnected.
