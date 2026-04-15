@@ -1,11 +1,10 @@
 """
 main.py
-The core of the bot.
-  - Connects to Telegram as a userbot using Telethon
-  - Listens to the private source channel
-  - Parses every new message for valid signals
-  - Executes trades on MT5
-  - Sends confirmation/failure notifications to the personal channel
+The core of the Prop Firm Management Bot.
+  - Listens to signal channel (switchable on the fly)
+  - Executes trades on ALL slave accounts simultaneously
+  - Accepts commands from personal channel to control everything
+  - Notifies personal channel with full execution report per signal
 """
 
 import asyncio
@@ -23,11 +22,12 @@ from config import (
     LOG_FILE
 )
 from signal_parser import parse_signal, format_signal_summary
-from trade_executor import connect_mt5, disconnect_mt5, execute_trade
+from account_manager import execute_on_all_accounts, format_execution_report
+from command_handler import handle_command, get_active_channel
 
-# =============================================================
-#  LOGGING SETUP
-# =============================================================
+# ─────────────────────────────────────────────────────────────
+# LOGGING
+# ─────────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
@@ -38,9 +38,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# =============================================================
-#  TELEGRAM CLIENT
-# =============================================================
+# ─────────────────────────────────────────────────────────────
+# TELEGRAM CLIENT
+# ─────────────────────────────────────────────────────────────
 client = TelegramClient(TELEGRAM_SESSION_NAME, TELEGRAM_API_ID, TELEGRAM_API_HASH)
 
 
@@ -49,96 +49,112 @@ async def send_notification(text: str):
     try:
         await client.send_message(PERSONAL_CHANNEL, text)
     except FloodWaitError as e:
-        logger.warning(f"Flood wait — sleeping {e.seconds}s")
         await asyncio.sleep(e.seconds)
     except Exception as e:
-        logger.error(f"Failed to send notification: {e}")
+        logger.error(f"Notification failed: {e}")
 
 
-# =============================================================
-#  MAIN SIGNAL HANDLER
-# =============================================================
-@client.on(events.NewMessage(chats=SOURCE_CHANNEL))
+# ─────────────────────────────────────────────────────────────
+# PERSONAL CHANNEL — COMMAND LISTENER
+# ─────────────────────────────────────────────────────────────
+@client.on(events.NewMessage(chats=PERSONAL_CHANNEL, outgoing=True))
+async def handle_personal_channel(event):
+    """
+    Listen to messages the client sends in his own personal channel.
+    If it's a command (/help, /pause, /setchannel etc.) — handle it.
+    """
+    text = event.message.message
+    if not text:
+        return
+    await handle_command(text, client, PERSONAL_CHANNEL, SOURCE_CHANNEL)
+
+
+# ─────────────────────────────────────────────────────────────
+# SIGNAL CHANNEL — MAIN TRADING LISTENER
+# ─────────────────────────────────────────────────────────────
+@client.on(events.NewMessage())
 async def handle_new_message(event):
     """
-    Triggered on every new message in the source channel.
-    Full pipeline: receive → parse → validate → execute → notify.
+    Listens to ALL incoming messages and filters for the active signal channel.
+    Dynamic channel matching so /setchannel works without restarting.
     """
-    message_text = event.message.message
-    if not message_text:
-        return  # Ignore media-only messages with no text
+    active_channel = get_active_channel(SOURCE_CHANNEL)
 
-    logger.info(f"📨 New message received:\n{message_text}\n{'─'*50}")
-
-    # --- STEP 1: Parse the signal ---
-    signal = parse_signal(message_text)
-
-    if signal is None:
-        logger.info("⏭️  Message skipped — not a valid signal.")
+    try:
+        chat = await event.get_chat()
+        chat_username = getattr(chat, "username", None)
+        chat_id       = getattr(chat, "id", None)
+        chat_invite   = getattr(chat, "invite_link", None)
+    except Exception:
         return
 
-    # --- STEP 2: Log & notify signal was detected ---
+    channel_match = (
+        (chat_username and chat_username.lower() in active_channel.lower()) or
+        (str(chat_id) in active_channel) or
+        (chat_invite and active_channel in chat_invite)
+    )
+
+    if not channel_match:
+        return
+
+    message_text = event.message.message
+    if not message_text:
+        return
+
+    logger.info(f"📨 Signal channel message:\n{message_text}\n{'─'*50}")
+
+    # ── Parse ──
+    signal = parse_signal(message_text)
+    if signal is None:
+        logger.info("⏭️  Skipped — not a valid signal.")
+        return
+
+    # ── Notify signal detected ──
     summary = format_signal_summary(signal)
-    logger.info(summary)
-    await send_notification(f"🔍 Signal Detected — Attempting execution...\n\n{summary}")
+    await send_notification(f"🔍 Signal Detected — Executing on all accounts...\n\n{summary}")
 
-    # --- STEP 3: Execute the trade on MT5 ---
-    result = execute_trade(signal)
+    # ── Execute on ALL slave accounts in parallel ──
+    results = await execute_on_all_accounts(signal)
 
-    # --- STEP 4: Notify result ---
+    # ── Send full execution report ──
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    notification = f"{result['message']}\n\n🕐 {timestamp}"
-    await send_notification(notification)
+    report = format_execution_report(results)
+    await send_notification(f"{report}\n\n🕐 {timestamp}")
 
 
-# =============================================================
-#  STARTUP & SHUTDOWN
-# =============================================================
+# ─────────────────────────────────────────────────────────────
+# STARTUP
+# ─────────────────────────────────────────────────────────────
 async def startup():
-    """Run startup checks before listening."""
     logger.info("=" * 60)
-    logger.info("  TELEGRAM → MT5 SIGNAL BOT  |  Starting up...")
+    logger.info("  PROP FIRM MANAGEMENT BOT  |  Starting up...")
     logger.info("=" * 60)
 
-    # Check config is filled
     if not TELEGRAM_API_ID or not TELEGRAM_API_HASH or not TELEGRAM_PHONE:
-        logger.error("❌ Telegram credentials missing in config.py — aborting.")
+        logger.error("❌ Telegram credentials missing in config.py")
         sys.exit(1)
 
-    if not SOURCE_CHANNEL or not PERSONAL_CHANNEL:
-        logger.error("❌ SOURCE_CHANNEL or PERSONAL_CHANNEL not set in config.py — aborting.")
-        sys.exit(1)
-
-    # Connect to MT5
-    if not connect_mt5():
-        logger.error("❌ Could not connect to MT5 — aborting.")
-        sys.exit(1)
-
-    logger.info(f"👂 Listening to channel: {SOURCE_CHANNEL}")
-    logger.info(f"📲 Notifications → {PERSONAL_CHANNEL}")
-    logger.info("✅ Bot is live and waiting for signals...\n")
+    active_channel = get_active_channel(SOURCE_CHANNEL)
+    logger.info(f"📡 Listening to: {active_channel}")
+    logger.info(f"📲 Commands & notifications → {PERSONAL_CHANNEL}")
+    logger.info("✅ Bot is live!\n")
 
     await send_notification(
-        "🤖 Signal Bot is LIVE!\n"
-        f"📡 Monitoring: {SOURCE_CHANNEL}\n"
-        "✅ MT5 connected and ready to trade."
+        "🤖 *Prop Firm Management Bot is LIVE!*\n\n"
+        f"📡 Signal Channel: {active_channel}\n"
+        "✅ All systems ready.\n\n"
+        "Type /help to see all available commands."
     )
 
 
+# ─────────────────────────────────────────────────────────────
+# ENTRY POINT
+# ─────────────────────────────────────────────────────────────
 async def main():
-    """Entry point."""
     await client.start(phone=TELEGRAM_PHONE)
     await startup()
-
-    try:
-        await client.run_until_disconnected()
-    finally:
-        disconnect_mt5()
-        logger.info("Bot stopped. MT5 disconnected.")
+    await client.run_until_disconnected()
 
 
-# =============================================================
-#  RUN
-# =============================================================
 if __name__ == "__main__":
     asyncio.run(main())
