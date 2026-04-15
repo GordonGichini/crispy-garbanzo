@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Client Demo",
+      "login": 435035534,
+      "password": "#Chadane2002",
+      "server": "Exness-MT5Trial9",
+      "risk_percent": 2.0,
+      "enabled": true,
+      "notes": "Test account"
+    }
+  ]
+}
